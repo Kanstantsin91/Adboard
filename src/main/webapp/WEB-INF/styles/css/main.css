@@ -1,0 +1,175 @@
+.ad {
+    background: #F5F2FF;
+    display: inline-flex;
+    height: 370px;
+    width: 100%;
+    padding: 20px 20px 0;
+}
+
+.login {
+    width: 350px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.header-funcs {
+    background: #F5F2FF;
+}
+
+.message {
+    color: red;
+}
+
+.ad-title {
+    font-size: 40px;
+    color: black;
+}
+
+.header-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px 5px 5px 20px;
+    display: inline-block;
+    height: 30px;
+    width: 185px;
+    font: bold 15px Arial;
+    text-decoration: none;
+    background-color: #c4bdbd;
+    color: #333333;
+}
+
+.header-button-fullPage {
+    padding: 5px 5px 5px 20px;
+    display: inline-block;
+    height: 30px;
+    width: 185px;
+    font: bold 15px Arial;
+    text-decoration: none;
+    background-color: #c4bdbd;
+    color: #333333;
+}
+
+.messageSuccess {
+    color: green;
+}
+
+.header {
+    display: flow-root;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    width: 1020px;
+}
+
+.main-header {
+    background-color: rgba(170, 170, 170, 1)
+
+}
+
+.nameOnMain {
+    margin-left: 10px;
+}
+
+.userInfo {
+    display: inline-grid;
+    float: right;
+}
+
+.crateAdLink {
+    float: left;
+}
+
+.logout {
+    margin-right: 155px;
+    padding: 5px 5px 5px 60px;
+    display: inline-block;
+    height: 30px;
+    width: 185px;
+    font: bold 15px Arial;
+    text-decoration: none;
+    background-color: rgba(225, 225, 225, 1);
+    float: right;
+    color: black;
+}
+
+.updateLink {
+    float: right;
+}
+
+.username {
+    color: white;
+}
+
+.user-details {
+    padding-left: 20px;
+    background: #F5F2FF;
+}
+
+.footer {
+    background-color: rgba(170, 170, 170, 1);
+    height: 100px;
+}
+
+.ad-page {
+    background: #F5F2FF;
+    margin-top: 0;
+}
+
+.ad-page-ad-title {
+    background: #F5F2FF;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.ad-page-ad-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ad-page-ad-description{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    font: caption;
+
+}
+
+.should-be-logged-in {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+.ad-page-user-button {
+    text-align: center;
+    display: inline-flex;
+    border-bottom-width: 15px;
+    margin-bottom: 15px;
+}
+
+.create-ad-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #F5F2FF;
+    margin-top: 0;
+
+}
+
+.ad-page-user-data {
+    text-align: center;
+}
+
+.create-ad-page-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
