@@ -1,3 +1,3 @@
 # Adboard
-Simple Adboard / Java / Spring MVC / Hibernate
+Simple advertisement board Java / Spring MVC / Hibernate
 training project
