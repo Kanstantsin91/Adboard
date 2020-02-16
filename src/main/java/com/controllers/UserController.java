@@ -68,7 +68,9 @@ public class UserController {
 
 
     @RequestMapping(value = {"toUpdateUser", "ads/toUpdateUser", "toEditAd/toUpdateUser"})
-    public String toUpdateUser(@ModelAttribute(StringUtil.USER_ATTRIBUTE) User user) {
+    public String toUpdateUser(@ModelAttribute(StringUtil.USER_ATTRIBUTE) User user, Model model, HttpServletRequest req) {
+        User userAttr = (User) req.getSession().getAttribute(StringUtil.USER_ATTRIBUTE);
+        model.addAttribute(StringUtil.USER_REQUEST_ATTRIBUTE, userAttr == null ? null : userAttr.getUserId());
         return "updateUser";
     }
 

@@ -1,16 +1,14 @@
 package com.dao;
 
+import com.pojo.User;
 import com.utils.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.query.Query;
-import com.pojo.User;
+import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.sql.SQLException;
 import java.util.List;
-
+@Service
 public class UserDao {
 
     Transaction transaction;

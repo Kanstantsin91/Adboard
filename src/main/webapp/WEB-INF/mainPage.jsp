@@ -54,7 +54,6 @@
     <div class="row">
         <div class="col-md-12">
             <c:forEach var="ad" items="${adList}">
-
                 <div class="ad">
                     <div><img src="data:image/jpg; base64, ${ad.imageName}" width="350" height="350" alt="cat.jpg"/>
                     </div>
@@ -64,10 +63,10 @@
                     </div>
                 </div>
             </c:forEach>
-
         </div>
     </div>
 </div>
+<footer class="footer"></footer>
 </body>
 </html>
 <%session.removeAttribute("message");%>

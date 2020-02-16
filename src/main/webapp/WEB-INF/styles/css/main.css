@@ -1,9 +1,9 @@
 .ad {
     background: #F5F2FF;
     display: inline-flex;
-    height: 370px;
+    height: 390px;
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 20px 20px 20px;
 }
 
 .login {

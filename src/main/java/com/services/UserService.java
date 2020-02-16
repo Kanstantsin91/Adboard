@@ -2,13 +2,14 @@ package com.services;
 
 import com.dao.UserDao;
 import com.pojo.User;
-import org.hibernate.exception.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
 
-    UserDao userDao = new UserDao();
+    @Autowired
+    UserDao userDao;
 
     public User getUserByLogin(String login, String password) {
         return userDao.getByLogin(login, password);

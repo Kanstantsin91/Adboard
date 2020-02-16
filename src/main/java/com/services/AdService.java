@@ -12,9 +12,6 @@ import java.util.List;
 @Component("adService")
 public class AdService {
 
-    public AdService() {
-    }
-
     @Autowired
     AdDao adDao;
 
@@ -48,8 +45,7 @@ public class AdService {
     public boolean setInactive(Ad ad) {
         ad.setAdStatus(false);
         try {
-            adDao.softDelete(ad);
-            return true;
+            return adDao.softDelete(ad);
         } catch (Exception ex) {
             ex.getStackTrace();
             return false;

@@ -66,10 +66,10 @@ public class AdController {
         ad.setAdTitle(title);
         ad.setAdDescription(description);
         if (adService.createAd(user, ad, file)) {
-            req.getSession().setAttribute("messageSuccess", "Объявление успешно добавлено!");
+            req.getSession().setAttribute("messageSuccess", StringUtil.MESSAGE_SUCCESS_AD_CREATE);
             return "redirect:/";
         } else {
-            req.getSession().setAttribute("message", "Во время создания объявления произошла ошибка!");
+            req.getSession().setAttribute("message", StringUtil.MESSAGE_ERROR_AD_CREATE);
             return "redirect:toCreateAd";
         }
     }
@@ -97,10 +97,10 @@ public class AdController {
         ad.setAdTitle(title);
         ad.setAdDescription(description);
         if (adService.updateAd(ad, file)) {
-            req.getSession().setAttribute("messageSuccess", "Объявление успешно обновлено!");
+            req.getSession().setAttribute("messageSuccess", StringUtil.MESSAGE_SUCCESS_AD_UPDATE);
             return "redirect:/ads/{adId}";
         } else {
-            req.getSession().setAttribute("message", "Во время обновления произошла ошибка!");
+            req.getSession().setAttribute("message", StringUtil.MESSAGE_ERROR_AD_UPDATE);
             return "redirect:/toEditAd/editAd/{adId}";
         }
     }
@@ -110,10 +110,10 @@ public class AdController {
                            HttpServletRequest req) {
         Ad ad = adService.getById(id);
         if (adService.setInactive(ad)) {
-            req.getSession().setAttribute("messageSuccess", "Объявление успешно удалено!");
+            req.getSession().setAttribute("messageSuccess", StringUtil.MESSAGE_SUCCESS_DELETE);
             return "redirect:/";
         } else {
-            req.getSession().setAttribute("message", "Во время удаления произошла ошибка!");
+            req.getSession().setAttribute("message", StringUtil.MESSAGE_ERROR_DELETE);
             return "redirect:ads/{adId}";
         }
     }
